@@ -1,5 +1,5 @@
 <template name="banner">
-            <swiper-item class="banner">
-                <image style="width: 100%;height: 380rpx;" src="{{image}}"></image>
-            </swiper-item>
+        <swiper-item class="banner">
+            <image style="width: 100%;height: 380rpx;" src="{{image}}"></image>
+        </swiper-item>
 </template>
