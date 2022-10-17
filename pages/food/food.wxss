@@ -1,0 +1,40 @@
+/* pages/food/food.wxss */
+@import '../../templates/foodList/foodList.wxss';
+page{
+    background-color: #f1f1f1;
+}
+.header{
+    display: flex;
+    padding: 10rpx;
+    background: #fff;
+    align-items: center;
+}
+.location{
+    width: 100rpx;
+    text-align: center;
+}
+.search{
+    background-color: #f1f1f1;
+    color: #acacac;
+    flex: 1;
+    font-size: 28rpx;
+    padding: 10rpx;
+    border-radius: 12rpx;
+}
+.product-type{
+    display: flex;
+    background: #fff;
+    padding-top: 20rpx;
+    flex-wrap: wrap;
+}
+.item{
+    width: 25%;
+    text-align: center;
+    color: #666;
+    font-size: 30rpx;
+    margin-bottom: 20rpx;
+}
+.item image{
+    width: 74rpx;
+    height: 74rpx;
+}

@@ -1,0 +1,21 @@
+/* pages/selectCity/selectCity.wxss */
+page{
+    padding: 20rpx;
+    width: auto;
+}
+button{
+    margin-top: 20rpx;
+}
+.location{
+    color: green;
+}
+.btn{
+    margin-right: 15rpx;
+}
+map{
+    width: 100%;
+}
+.location-b{
+    
+    color: green;
+}

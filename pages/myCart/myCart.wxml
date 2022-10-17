@@ -1,0 +1,33 @@
+<view class="list {{item.del?'move':''}}" bindtap="dell" wx:for="{{list}}" wx:key="index" data-id="{{index}}" bind:touchstart="touchstart" bind:touchmove="touchmove">
+        <view class="item" bindtap="change">
+           <view class="radio">
+                <icon wx:if="{{item.selected}}" bindtap="selected" type="success" data-id="{{index}}"></icon>
+                <icon bindtap="selected" data-id="{{index}}" wx:else type="circle"></icon>
+           </view>
+           <image mode="widthFix" src="{{item.pic}}"></image>
+           <view class="content">
+                <view class="title">{{item.name}}</view>
+                <view class="desc">{{item.info}}</view>
+                <view class="price">${{item.price}}</view>
+           </view>
+           <view class="num">
+                <view class="reduce" bindtap="reduce" data-id="{{item.id}}" data-index="{{index}}">-</view>
+                <input class="number" value="{{item.num}}" maxlength="2" bindinput="inputnum" data-id="{{index}}"></input>
+                <view class="add" bindtap="add" data-id="{{item.id}}" data-index="{{index}}">+</view>
+           </view>
+        </view>
+        <view class="remove" bindtap="remove" data-id="{{item.id}}">删除</view>   
+</view>
+<view class="jiesuan">
+    <view class="selectall">
+        <icon wx:if="{{selectedAll}}" bindtap="selectAll" type="success"></icon>
+        <icon wx:else type="circle" bindtap="noselectAll"></icon>
+        <p>全选</p>
+    </view>
+    <view class="heji">
+        <p>合计</p><view class="allmoney">{{allmoney}}</view>
+        <view class="nofei">不含运费</view>
+        <view wx:if="{{selectButton}}" class="blue jiebut" bindtap="buy"><p>结算</p>({{allmoney}})</view>
+        <view wx:else class="jiebut"><p>结算</p>({{allmoney}})</view>
+    </view>
+</view>

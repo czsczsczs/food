@@ -1,0 +1,4 @@
+<import src="../../templates/foodList/foodList.wxml"/>
+<view wx:for="{{list}}" wx:key="index" bindtap="productdetail" data-id="{{item.id}}">
+    <template is="foodList" data="{{...item}}"></template>
+</view>

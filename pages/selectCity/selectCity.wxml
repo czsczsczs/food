@@ -1,0 +1,6 @@
+<view>当前所在的城市</view>
+<button class="location" size="mini" bindtap="getLocation">获取定位</button>
+<view>热门城市</view>
+<button wx:for="{{list}}" wx:key="index" size="mini" class="btn" bindtap="choosecity" data-id="{{index}}">{{item}}</button>
+<map name="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers[0]}}" show-location="true"></map>
+<button class="location-b" bindtap="Location">定位</button>

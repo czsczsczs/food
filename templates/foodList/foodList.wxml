@@ -1,0 +1,15 @@
+<template name="foodList"> 
+<view class="list">
+    <view class="list-img">
+        <image src="{{pic}}"></image>
+    </view>
+    <view class="list-info">
+        <view class="title">{{name}}</view>
+        <view class="info">{{description}}</view>
+        <view class="info-bottom">
+            <view class="price">{{price}}</view>
+            <view class="num">{{buynum}}付款</view>
+        </view>
+    </view>
+</view>
+</template>

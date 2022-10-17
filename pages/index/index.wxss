@@ -1,0 +1,90 @@
+/* pages/index/index.wxss */
+.banner{
+    position: relative;
+    height: 350rpx;
+    width: 100%;
+}
+.banner-current{
+    position:absolute;
+    bottom: 8rpx;
+    font-size: 26rpx;
+    right: 20rpx;
+    color: white;
+}
+.banner image{
+    height: 350rpx;
+    width: 100%;
+}
+.banner swiper-item{
+    position: relative;
+}
+.banner .desc{
+    position:absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    left: 0;
+    right: 0;
+    padding: 10rpx;
+    font-size: 24rpx;
+    text-align: center;
+}
+.one_day{
+    margin: 34rpx 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.one_item{
+    text-align: center;
+    font-size: 28rpx;
+    color: #676556;
+}
+.one_item image{
+    width: 306rpx;
+    height: 185rpx;
+}
+.list{
+    padding:0 20rpx;
+}
+.item{
+    border-bottom: 1rpx solid #eee;
+    padding-bottom: 18rpx;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+.title{
+    font-size: 30rpx;
+    color: #1a1a1a;
+    margin-bottom: 18rpx;
+}
+.item-wrapper{
+    display: flex;
+}
+.img image{
+    width: 210rpx;
+    height: 140rpx;
+}
+.info{
+    color: #777;
+    font-size: 26rpx;
+    padding-left: 20rpx;
+    overflow : hidden;
+    height: 100rpx;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+
+}
+.ready-num{
+    font-size: 26rpx;
+    color: #4d4d4d;
+    position:absolute;
+    bottom: 20rpx;
+    right: 20rpx;
+}
+.ready-num text{
+    color: red;
+    margin-right: 4rpx;
+}

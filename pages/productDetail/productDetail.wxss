@@ -1,0 +1,66 @@
+@import '../../templates/banner/banner.wxss';
+page{
+    background-color: #b8b8b8;
+}
+.product{
+    background-color: white;
+    margin-top: 10rpx;
+}
+.name{
+    font-weight: bold;
+    font-size: 28rpx;
+    padding: 10rpx;
+}
+.pinglun{
+    color: rgb(212, 212, 212);
+    font-size: 24rpx;
+    padding: 12rpx;
+}
+.container{
+    padding: 10rpx;
+}
+.detailimage{
+    width: 100%;
+    margin-top: 20rpx;
+}
+.title{
+    margin-top: 20rpx;
+}
+.desc{
+    margin-top: 20rpx;
+    margin-bottom: 100rpx;
+}
+.shop{
+    position:fixed;
+    bottom:0;
+    display: flex;
+    right: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(214, 214, 214);
+    padding: 15rpx;
+}
+.shopimg{
+    flex:1;
+    text-align: right;
+}
+.shop image{
+    width: 50rpx;
+    margin-right: 20rpx;
+}
+.but{
+    padding: 10rpx;
+    font-size: 28rpx;
+    color: white;
+    width: 150rpx;
+    text-align: center;
+}
+.addshop{
+    background-color: red;
+    border-radius: 10rpx 0 0 10rpx;
+}
+.buy{
+    background-color:pink;
+    border-radius: 0 10rpx 10rpx 0;
+
+}

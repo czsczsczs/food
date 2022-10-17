@@ -1,0 +1,34 @@
+<view class="header">
+    <view class="location">
+        <navigator url="../selectCity/selectCity" hover-class="none">{{location}}</navigator>
+    </view>
+    <view class="search">
+        <navigator url="../search/search" hover-class="none">请输入你想要的内容</navigator>
+    </view>
+</view>
+<view class="product-type">
+    <view class="item" wx:for="{{productType}}" wx:key="index" bindtap="producttype" data-id="{{item.id}}">
+        <image src="{{item.imgUrl}}"></image>
+        <view>{{item.name}}</view>
+    </view>
+</view>
+<!-- <view class="list">
+    <view class="list-img">
+        <image src="../../images/item-1.jpg"></image>
+    </view>
+    <view class="list-info">
+        <view class="title">标题</view>
+        <view class="info">信息</view>
+        <view class="info-bottom">
+            <view class="price">$45</view>
+            <view class="num">123付款</view>
+        </view>
+    </view>
+</view> -->
+<import src="../../templates/foodList/foodList.wxml"/>
+<view wx:for="{{list}}" wx:key="index" bindtap="productdetail" data-id="{{item.id}}">
+    <template is="foodList" data="{{...item}}"></template>
+</view>
+<!-- 1、点击下拉 2、下拉函数 -->
+<!-- <button bindtap="getMore" wx:if="{{isshow}}">点击加载更多</button> -->
+<view wx:if="{{isshow}}" style="text-align:center;">{{bottom}}</view>

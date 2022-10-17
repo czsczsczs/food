@@ -1,0 +1,44 @@
+.list{
+    background: #fff;
+    padding: 10rpx;
+    display: flex;
+    margin-top: 20rpx;
+}
+.list-img{
+    width: 184rpx;
+    height: 184rpx;
+    padding: 5rpx;
+}
+.list-img image{
+    width: 184rpx;
+    height: 184rpx;
+    
+}
+.list-info{
+padding-left: 20rpx;
+position: relative;
+flex:1;
+}
+.title{
+    color: #333;
+    font-size: 30rpx;
+    margin-bottom: 14rpx;
+}
+.info{
+    font-size: 28rpx;
+    color: #666;
+}
+.info-bottom{
+    position: absolute;
+    bottom: 0rpx;
+    left: 20rpx;
+    font-size: 24rpx;
+    display: flex;
+}
+.price{
+    color: red;
+    margin-right: 30rpx;
+}
+.num{
+    color: #666;
+}

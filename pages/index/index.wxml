@@ -1,0 +1,63 @@
+<!-- 轮播图 -->
+<view class="banner">
+    <swiper
+    autoplay="true"
+    interval="3000"
+    bindchange="bannerChange">
+        <swiper-item wx:for="{{bannerArr}}" wx:key="index">
+            <navigator url="{{item.url}}">
+                <image src="{{item.image}}"></image>
+                <view class="desc">{{item.title}}</view>
+            </navigator>
+        </swiper-item>
+    </swiper>
+    <view class="banner-current">{{currentpage+1}}/{{bannerArr.length}}</view>
+</view>
+<view class="one_day">
+    <view class="one_item">
+        <image src="../../images/info_left.jpg"></image>
+        <view>每日一测</view>
+    </view>
+    <view class="one_item">
+        <image src="../../images/info_right.jpg"></image>
+        <view>每日食谱</view>
+    </view>
+</view>
+<!-- 事件跳转方法 -->
+<view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}" bindtap="indexDetail" data-item-id="{{item.id}}">
+            <view class="title">{{item.title}}</view>
+            <view class="item-wrapper">
+                <view class="img">
+                    <image src="{{item.image}}"></image>    
+                </view>
+                <view class="info">
+                {{item.desc}}
+                </view>
+                <view class="ready-num">
+                <text>{{item.readNum}}</text>
+                次阅读
+                </view>
+            </view> 
+    </view>
+</view>
+<!-- 地址传参跳转方法 -->
+<!-- <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}" >
+        <navigator url="../indexDetail/indexDetai?itemId={{item.id}}">
+            <view class="title">{{item.title}}</view>
+            <view class="item-wrapper">
+                <view class="img">
+                    <image src="{{item.image}}"></image>    
+                </view>
+                <view class="info">
+                {{item.desc}}
+                </view>
+                <view class="ready-num">
+                <text>{{item.readNum}}</text>
+                次阅读
+                </view>
+            </view> 
+        </navigator>
+    </view>
+</view> -->

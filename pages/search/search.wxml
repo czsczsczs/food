@@ -1,0 +1,9 @@
+<view class="header">
+    <view class="search">
+    <input type="text" focus="true" placeholder="请输入你想要的内容" bindinput="inputsearch"/>
+    </view>
+</view>
+<import src="../../templates/foodList/foodList.wxml"/>
+<view wx:for="{{list}}" wx:key="index" bindtap="productdetail" data-id="{{item.id}}">
+    <template is="foodList" data="{{...item}}"></template>
+</view>

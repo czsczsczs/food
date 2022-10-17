@@ -1,0 +1,19 @@
+<import src="../../templates/banner/banner.wxml"></import>
+<swiper autoplay="true">
+    <template wx:for="{{bannerlist}}" wx:key="index" is="banner" data="{{...item}}"></template>
+</swiper>
+<view class="name product">{{product.name}}</view>
+<view class="pinglun product">暂无评论</view>
+<view class="container product">
+    <view>商品详情</view>
+    <image class="detailimage" src="{{product.pic}}" mode="widthFix"></image>
+    <view class="title">{{product.description}}</view>
+    <view class="desc">{{product.details}}</view>
+</view>
+<view class="shop">
+    <view class="shopimg">
+        <image src="../../images/tab9.png" mode="widthFix" bindtap="intoshop"></image>
+    </view>
+    <view class="addshop but" bindtap="addshop">加入购物车</view>
+    <view class="buy but">直接购买</view>
+</view>

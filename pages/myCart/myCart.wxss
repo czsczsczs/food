@@ -1,0 +1,132 @@
+page{
+    background: rgb(226, 226, 226);
+}
+.list{
+    margin-top:20rpx;
+    display: flex;
+    position: relative;
+    transition: all 0.4s;
+    height: 240rpx;
+}
+.item{
+    display: flex;
+    position: relative;
+    background: white;
+    padding: 20rpx;
+    width: 100%;
+    transform: translateX(200rpx);
+    transition: all 0.4s;
+    margin-left: -200rpx;
+}
+.item .radio{
+    display: flex;
+    align-items: center;
+}
+.item image{
+    width: 400rpx;
+    margin-left: 10rpx;
+}
+.content{
+    margin-left: 10rpx;
+    position: relative;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 10rpx;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;/*设置方向*/
+    overflow:hidden;
+    -webkit-line-clamp:1;
+    text-overflow:ellipsis;
+}
+.desc{
+    color: rgb(114, 114, 114);
+    display:-webkit-box;
+    -webkit-box-orient:vertical;/*设置方向*/
+    -webkit-line-clamp:2;/*设置超过为省略号的行数*/
+    overflow:hidden;
+}
+.price{
+    position:absolute;
+    bottom: 0;
+    color: red;
+}
+.num{
+    position:absolute;
+    display: flex;
+    right: 20rpx;
+    bottom: 10rpx;
+    padding: 10rpx;
+    width: 150rpx;
+}
+.reduce{
+    border: 1px solid rgb(117, 117, 117);
+    padding: 0 15rpx 0 15rpx;
+}
+.number{
+    text-align: center;
+    color: black;
+}
+.add{
+    border: 1px solid rgb(0, 0, 0)(0, 0, 0);
+    background-color: black;
+    color: white;
+    padding: 0 15rpx 0 15rpx;
+}
+.remove{
+    position: relative;
+    width: 200rpx;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    /* display: none; */
+    transform: translateX(200rpx);
+    transition: all 0.4s;
+}
+.move{
+    transition: all 0.4s;
+    transform: translateX(-200rpx);
+}
+.jiesuan{
+    display:flex;
+    background-color: white;
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+p{
+    font-size: 30rpx;
+}
+.selectall{
+    flex:1;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+.heji{
+    display: flex;
+    align-items: center;
+}
+.allmoney{
+    color:rgb(58, 183, 206);
+    margin-left: 10rpx;
+}
+.nofei{
+    color: rgb(161, 161, 161);
+    margin-right: 20rpx;
+    margin-left: 10rpx;
+    font-size: 25rpx;
+}
+.jiebut{
+    background-color: rgb(180, 180, 180);
+    color: white;
+    float: right;
+    padding: 20rpx 30rpx 20rpx 30rpx; 
+}
+.blue{
+    background:red
+}

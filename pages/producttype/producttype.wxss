@@ -1,0 +1,5 @@
+/* pages/producttype/producttype.wxss */
+page{
+    background: #f1f1f1;
+}
+@import '../../templates/foodList/foodList.wxss'

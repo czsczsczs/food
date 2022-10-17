@@ -1,0 +1,30 @@
+page{
+    background-color: #f1f1f1;
+}
+.cont{
+    background-color: white;
+    margin-top: 20rpx;
+}
+.userinfo{
+    padding: 30rpx;
+    display: flex;
+    align-items: center;
+}
+.userimg{
+    width: 120rpx;
+    height: 120rpx;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin-right: 20rpx;
+}
+.userinfo image{
+    width: 120rpx;
+    height: 120rpx;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin-right: 20rpx;
+}

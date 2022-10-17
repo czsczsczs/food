@@ -1,0 +1,9 @@
+<view class="title">
+{{indexDetail.title}}
+</view>
+
+<image class="img" src="{{indexDetail.image}}"></image>
+
+<view class="article">
+    {{indexDetail.detail}}
+</view>

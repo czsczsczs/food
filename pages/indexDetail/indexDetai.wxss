@@ -1,0 +1,17 @@
+/* pages/indexDetail/indexDetai.wxss */
+.title{
+    margin: 20rpx;
+    font-size: 36rpx;
+}
+.img{
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.article{
+    padding: 20rpx;
+    text-align: justify;
+    color: #666;
+    font-size: 30rpx;
+    line-height: 44rpx;
+    text-indent: 2em;
+}
